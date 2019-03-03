@@ -4,6 +4,7 @@ services:
   web:
     image: nginx
     deploy:
+      endpoint_mode: vip
       labels:
         primary: "true"
     ports:
