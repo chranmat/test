@@ -6,4 +6,4 @@ services:
     ports:
       - "80"
     labels:
-      primary: true
+      primary: "true"
