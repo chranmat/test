@@ -8,3 +8,7 @@ services:
         primary: "true"
     ports:
       - "80"
+  api:
+    image: nginx
+    ports:
+      - "80"
