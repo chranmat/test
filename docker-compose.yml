@@ -5,10 +5,14 @@ services:
     image: nginx
     deploy:
       labels:
+        hostname: "registry"
         primary: "true"
     ports:
       - "80"
   api:
     image: nginx
+    deploy:
+      labels:
+        hostname: "regapi"
     ports:
       - "80"
