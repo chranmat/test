@@ -5,7 +5,6 @@ services:
     image: nginx
     deploy:
       labels:
-        hostname: "registry"
         primary: "true"
     ports:
       - "80"
@@ -13,6 +12,5 @@ services:
     image: nginx
     deploy:
       labels:
-        hostname: "regapi"
     ports:
       - "80"
